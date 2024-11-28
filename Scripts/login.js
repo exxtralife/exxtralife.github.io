@@ -2,7 +2,7 @@
 
 function check_login(username, password)
 {
-    if(username == "eden" && password == "eden")
+    if(username == "eden" && password == "redacted")
     {
         return true;
     }
@@ -10,6 +10,12 @@ function check_login(username, password)
     {
         return false;
     }
+}
+
+
+function cipher_text(password)
+{
+
 }
 
 const form = document.getElementById('loginForm');
