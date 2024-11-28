@@ -56,8 +56,7 @@ body
 .draggable button
 {
     background-color: transparent;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+
     border-width: 0px;
 }
 
