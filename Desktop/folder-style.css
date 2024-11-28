@@ -1,0 +1,21 @@
+
+#src
+{
+    position: absolute;
+    top:80px;
+    right: 600px
+}
+
+#content
+{
+    position: absolute;
+    top:700px;
+    right: 500px
+}
+
+#news
+{
+    position: absolute;
+    top:50px;
+    right: 100px
+}
