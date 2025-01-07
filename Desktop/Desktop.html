@@ -45,7 +45,7 @@
             <div class = "draggable" id="poster">
                 <button onclick = "posterClick()">
 
-                    <div class = "folder"><img draggable="false" width="96" src= "product/bandage.png">poster.png</div>
+                    <div class = "folder"><img draggable="false" width="96" src= "product/bandage.png">archive</div>
                 </button>
             </div>
 
@@ -59,6 +59,12 @@
             <div class = "draggable" id="product">
                 <button onclick = "productClick()">
                     <div class = "folder"><img draggable="false" src= "assets/folder-icon.png">product</div>
+                </button>
+            </div>
+
+            <div class = "draggable" id="faeble">
+                <button onclick = "faebleClick()">
+                    <div class = "folder"><img draggable="false" width="96" src= "assets/faeble-bicstan/icon.png">faeble.txt</div>
                 </button>
             </div>
 
@@ -126,6 +132,10 @@ function posterClick()
     window.location.href = 'product/exxtralife-three.html';
 }
 
+function faebleClick()
+{
+    window.location.href = 'setlists/faeble.txt';
+}
 
 function productClick()
 {

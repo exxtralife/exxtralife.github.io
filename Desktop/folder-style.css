@@ -2,27 +2,34 @@
 #src
 {
     position: absolute;
-    top:80px;
-    right: 600px
+    top:20%;
+    right: 40%;
 }
 
 #content
 {
     position: absolute;
-    top:700px;
-    right: 500px
+    top:20%;
+    right: 2;
 }
 
 #news
 {
     position: absolute;
-    top:50px;
-    right: 100px
+    top:40%;
+    right: 2%;
 }
 
 #poster
 {
     position: absolute;
-    top:400px;
-    right: 1100px
+    top:20%;
+    right: 90%;
+}
+
+#faeble
+{
+    position: absolute;
+    top:40%;
+    right: 90%;
 }
