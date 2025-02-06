@@ -3,63 +3,90 @@
 <html lang="en">
 
 <head>
+
+    <title>exxtralite [...]</title>
+
     <link rel="stylesheet" href="mailstyle.css" >
+    <link rel="stylesheet" href="layout.css" >
+    <link rel="stylesheet" href="graphics.css" >
+
+    <script src="https://pixijs.download/release/pixi.js"></script>
+    <script src="assets/scripts/phys.js"></script>
+
 </head>
 
-    <div class = "header">
-        exxtramails
+    <div class = container id = "page">
+        <script src="assets/scripts/graph.js" type="module"></script>
+
+        
     </div>
 
-    <div class="row">
-        <div class="column left">
-            <div class = "tower">
-                
-                <div class = "bartopper">Eden Plus</div>
-                <div class = "menuitem">
+    <div class = "aspect">
+    
+    <div class = "ticket" id = "redticket">
+        <div class="row">
+            <div class="column left">
+                <div class = "page">
+                    <div class = "tower">
+                        <div class = "topper"><h1>exxtralite</h1></div>
 
-                </div>
+                        <div class = "preview" id = "ticketLeft">
+                          
 
-            </div>
-        </div>
+                            <video width="73%" height="100%" id = "leftvid" autoplay muted loop>
+                                <source src="assets/video/amiere.mp4" type = "video/mp4">
+                            </video>
+                            
+                            <div class = "lpanel">
+                                <img src = "assets/images/bnw.png" width="70%" id = "rail">
+                            </div>
+                        </div>
 
-        <div class="column middle">
-            <div class = "page">
-                <div class = "tower">
-                    <div class = "topper">Mail</div>
-                    <div class = "tab"><u>Focused</u></div>
-
-                    <div class = "preview">
-                        <a href="https://edwxn-13.github.io" class="fill-div"></a>
-                        <h2>Samuel Ross</h2>
-                        <h3>10:13 - 12/24/24</h3>
-                        <h3>urgent matters regarding your recent on job performance</h3>
-                        <p>you have an email!</p>
-                    </div>
-                    <div class = "preview">
-                        <a href="https://edwxn-13.github.io" class="fill-div"></a>
-                        <h2>email!</h2>
-                        <p>you have an email!</p>
-                    </div>
-                    <div class = "preview">
-                        <a href="https://edwxn-13.github.io" class="fill-div"></a>
-                        <h2>email!</h2>
-                        <p>you have an email!</p>
+                        <div class = "bopper">a multiplayer event [...]</div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="column right">
-            <div class = "mheader">
-                <a href="https://edwxn-13.github.io" class="fill-div"></a>
-                <h2>Samuel Ross</h2>
-                <h3>10:13 - 12/24/24</h3>
-                <h3>urgent matters regarding your recent on job performance</h3>
-                <p>you have an email!</p>
+            <div class="column middle">
+                <div class = "page">
+                    <div class = "tower">
+                        <div class = "topper" style="padding-top: 2.9vw;">⎋⎋⎋</div>
+
+                        <div class = "preview" id = "ticketMiddle">
+
+                            <video width="100%" height="100%" autoplay loop>
+                                <source src="assets/video/amiere.mp4" type = "video/mp4">
+                            </video>
+
+                            
+                        </div>
+
+                        <div class = "bopper">no rsvp - free entry</div>
+                    </div>
+                </div>
             </div>
-            <div class = "mpage">
-                
+
+            <div class="column right">
+                <div class = "page">
+                    <div class = "tower">
+                        <div class = "topper" style="font-size: 1vw; padding-top: 4vw;"> the haggerston - E4 8AA - 9pm till late</div>
+
+                        <div class = "preview" id = "ticketRight">
+
+                            <video width="100%" height="100%" autoplay muted loop>
+                                <source src="assets/video/amiere.mp4" type = "video/mp4">
+                            </video>
+                            
+                          
+                        </div>
+
+                        <div class = "bopper">ambient - experimental - club - pop  [...]</div>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
+    </div>
+
+    </div>
+   
 </html>
