@@ -15,7 +15,7 @@ body
     background-position: center top;
     background-image: url("../../menu/bg.png");
     font-family:swiss751;
-    font-size: 1vw;
+    font-size: 1.3vw;
     letter-spacing: -7%;
     -webkit-font-smoothing: antialiased;
     cursor: crosshair;
@@ -23,9 +23,11 @@ body
 
 h1
 {
-    font-family:swiss751;
-    color: white;
+    font-family:swiss_bold;
+    color: black;
     font-size: 1.8vw;
+    letter-spacing: -8%;
+
 }
 
 h2
@@ -97,7 +99,7 @@ h2
     display: grid;
     width: 27%;
     height: 100%;
-    background-color: rgb(100, 186, 81);
+    background-color: rgb(255, 59, 154);
     float: left;
     align-items: right;
     justify-self: right;
@@ -116,7 +118,7 @@ h2
 
     padding-top: 2.1vw;
     padding-left: 1.6vw;
-    background-color: rgb(154, 167, 159);
+    background-color: rgb(225, 225, 225);
     justify-self: center;
     width: 100%;
     outline: black;
@@ -135,7 +137,7 @@ h2
     padding-top: 0.9vw;
     padding-left: 1.6vw;
 
-    background-color: rgb(154, 167, 159);
+    background-color: rgb(255, 59, 154);
     justify-self: center;
     width: 100%;
     outline: black;
