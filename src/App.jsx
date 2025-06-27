@@ -9,9 +9,9 @@ function App() {
 
   return (
     <>
-    <div>      
-      <TextPanel/>
-    </div>
+      <div>      
+        <TextPanel/>
+      </div>
     </>
   )
 }
