@@ -11,11 +11,9 @@ const TextPanel = () =>
 
             if(deus.toUpperCase() != "GOD")
                 {
-
                     console.log(deus);
                     setDeus("");
                 }
-            
         }
 
     return (
