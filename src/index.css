@@ -69,7 +69,5 @@ button:focus-visible {
 
 @font-face {
   font-family: 'Atype';
-  src: local('Atype'), url(./fonts/AtypeHollow.otf) format('otf');
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                            'embedded-opentype', and 'svg' */
+  src: local('Atype'), url(./fonts/AtypeHollow.otf) format('opentype');
 }
