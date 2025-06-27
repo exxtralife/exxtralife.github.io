@@ -1,0 +1,15 @@
+.ticket-spread
+{
+    padding-top: 20vh;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    
+    justify-items: center;
+}
+
+.ticket-spread img
+{
+    float: left;
+    width: 36vw;
+}

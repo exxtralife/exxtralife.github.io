@@ -3,7 +3,11 @@
 #bottom-panel-root{
     /* margin: auto; */
     /* width: 50%;
-    padding: 10px; */
+    */
+    padding: 20px; 
     text-align: left;
     font-family: Atype;
+    background-color: #FF006B;
+    color: white;
+    margin-top: 20px;
 }
