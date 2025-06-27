@@ -1,14 +1,29 @@
+import React, { useState } from "react";
+
+
 const TextPanel = () => 
 {
+    const [deus, setDeus] = useState("");
+
     const deusCheck = (e) => 
         {
-            e.target.value = "12";
+            e.preventDefault();
+
+            if(deus.toUpperCase() != "GOD")
+                {
+
+                    console.log(deus);
+                    setDeus("");
+                }
+            
         }
 
     return (
     <>
         <div class = "textPanel">
-            escape will make me <input id="escapeField" onChange = {e => deusCheck(e)} type="text"></input>
+            <form onSubmit = {e => deusCheck(e)}>
+            escape will make me <input id="escapeField" onChange={(e) => setDeus(e.target.value)}  value = {deus} type="text"></input>
+            </form>
         </div>
     </>
     )
