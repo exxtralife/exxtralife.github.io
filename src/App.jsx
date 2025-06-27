@@ -4,16 +4,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 import TextPanel from './components/textPanel'
+import BottomPanel from './components/BottomPanel/BottomPanel'
 
 function App() {
-
   return (
     <>
-      <div>      
-        <TextPanel/>
-      </div>
+    <div>      
+      <TextPanel/>
+      <BottomPanel/>
+    </div>
     </>
   )
 }
-
 export default App

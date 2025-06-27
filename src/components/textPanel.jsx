@@ -1,6 +1,3 @@
-
-
-
 const TextPanel = () => 
 {
     const deusCheck = (e) => 
