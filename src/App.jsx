@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-import TextPanel from './components/textPanel'
+import TextPanel from './components/TextPanel/TextPanel'
 import BottomPanel from './components/BottomPanel/BottomPanel'
 import SideBySideCards from './components/SideBySideCards/SideBySideCards'
 

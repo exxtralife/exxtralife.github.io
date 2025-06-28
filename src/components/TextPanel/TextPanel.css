@@ -1,0 +1,18 @@
+
+.textPanel
+{
+    color: white;
+    font-family: Atype;
+    font-size: 40px;
+    margin-top: 45vh;
+}
+
+.textPanel input
+{
+    color: white;
+    font-family: Atype;
+    background-color: transparent;
+    font-size: 40px;
+    width: 120px;
+    border: 0px;
+}
