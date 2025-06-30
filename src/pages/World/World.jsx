@@ -25,18 +25,13 @@ function World() {
       <div className="world-page">
 
         <Link to= "/instruction">
-
           <SideBySideCards url1={image1Url}
             url2={image2Url}/>
-
         </Link>
 
           <SingleTicket url1={loop}/>
           
-
-          <a href = "../../../old/Desktop/Desktop.html">
-            <SingleTicket url1={three}/>
-          </a>
+          <SingleTicket url1={three}/>
 
           <a href = "https://edwxn-13.github.io/exxtralife/exxtralife.html">
             <SingleTicket url1={lite}/>
