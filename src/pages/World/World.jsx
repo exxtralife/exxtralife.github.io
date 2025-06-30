@@ -37,8 +37,10 @@ function World() {
           <a href = "../../../old/Desktop/Desktop.html">
             <SingleTicket url1={three}/>
           </a>
-          <SingleTicket url1={lite}/>
 
+          <a href = "https://edwxn-13.github.io/exxtralife/exxtralife.html">
+            <SingleTicket url1={lite}/>
+          </a>
           <Navigation/>
       </div>
 
