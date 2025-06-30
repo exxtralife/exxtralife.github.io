@@ -1,0 +1,19 @@
+.terminalPage
+{
+    background-color: white;
+    height: 100%;
+}
+
+#bottom-panel-root{
+    /* margin: auto; */
+    /* width: 50%;
+    */
+    padding: 20px; 
+    text-align: left;
+    font-family: Atype;
+    background-color: white;
+    color: red;
+    font-size: 250%;
+
+    margin-top: 20px;
+}

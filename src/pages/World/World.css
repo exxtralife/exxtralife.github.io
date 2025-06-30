@@ -1,5 +1,20 @@
 .world-page {
+
+  overflow-y: visible; /* Add vertical scrollbar */
+
   padding: 20px;
   background-color: white;
+
+  display: flex;
+  align-items: center;
+  float: none;
 }
 
+.displayPane
+{
+
+  overflow-y: visible; /* Add vertical scrollbar */
+
+  height: 100vh;
+  background-color: white;
+}

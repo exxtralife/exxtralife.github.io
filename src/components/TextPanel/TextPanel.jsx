@@ -31,9 +31,14 @@ const TextPanel = ({panelID, index, max, fn}) =>
             
             else
             {
+                const textBox = document.getElementById(textPanelID);
+                const form = document.getElementById(formID);
+                form.innerHTML = text + " " + deus;
+                textBox.remove();
+
                 if(currentID == max)
                 {
-                    navigate("/TerminalOne");
+                    navigate("/terminal");
                 }
                 else
                 {
@@ -47,7 +52,7 @@ const TextPanel = ({panelID, index, max, fn}) =>
 
     return (
     <>
-        <div>
+        <div className="tBackground">
         <div className = "textPanel" id = {panelID}>
             <form id={formID} onSubmit = {e => deusCheck(e)}>
             {text} <input id={textPanelID} onChange={(e) => setDeus(e.target.value)}  value = {deus} type="text"></input>
@@ -89,7 +94,7 @@ const SentenceChain = () =>
         <div className = "sentenceChain">
 
            {numbers.filter(number => panelsSeen.includes(number)).map((number) => (
-                <TextPanel panelID ={"panel" + number} index = {number} max = {5} fn={update}/>
+                <TextPanel panelID ={"panel" + number} index = {number} max = {5} fn={update} />
             ))}
 
         </div>

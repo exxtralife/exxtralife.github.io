@@ -13,14 +13,24 @@
     justify-content: center;
     align-items: center;
     justify-items: center;
+
+    width: 70vw;
+}
+.tBackground
+{
+    background-color: #FF006B;
+}
+form 
+{
+    background-color: #FF006B;
 }
 
 .textPanel input
 {
     color: #FF006B;
     font-family: Atype;
-    background-color: white;
-    border-radius: 12px;
+    background-color: #ffffff;
+    border-radius: 8px;
     font-size: 40px;
     width: 120px;
     border: 0px;

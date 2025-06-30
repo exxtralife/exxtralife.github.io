@@ -19,7 +19,8 @@
 
 ::selection {
   color: red;
-  background:yellow;
+  background-color: rgba(255,255,255,0.99);
+  opacity: 100%;
 }
 
 a {
@@ -63,3 +64,51 @@ h1 {
   src: local('Atype'), url(./fonts/AtypeHollow.otf) format('opentype');
 }
 
+
+nav
+{
+  padding-top: 12vh;
+  height: 10%;
+  width: 100%;
+  background-color: white;
+  background: white;
+}
+
+.nav-inner
+{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color: transparent;
+  background-color: white;
+  background: white;
+}
+
+nav .logo
+{
+  height: 3vw;
+    background-color: white;
+  background: white;
+
+  display: flex;
+    justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+
+nav img
+{
+  display: flex;
+    justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 5vw;
+  background-color: white;
+  background: white;
+}

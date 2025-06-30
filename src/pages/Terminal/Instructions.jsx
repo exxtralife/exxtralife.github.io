@@ -1,17 +1,20 @@
 import { Link } from "react-router-dom";
 import BottomPanel from "../../components/BottomPanel/BottomPanel";
-import "./Terminal.css"
-import TerminalText from "./Texts/one.txt";
+import "./Broadcast.css"
+import TerminalInstructions from "./Texts/instructions.txt";
 import { useState, useEffect } from "react";
 
-function TerminalOne({url}) {
 
-  document.body.style = 'background:#FF006B;';
-  document.documentElement.style.setProperty('background', '#FF006B');
+
+
+function Instructions({url}) {
+
+  document.body.style = 'background:white;';
+  document.documentElement.style.setProperty('background', 'white');
   const [outputText, setOutputText] = useState("");
 
   useEffect(() => {
-      fetch(TerminalText)
+      fetch(TerminalInstructions)
           .then((res) => res.text())
           .then((text) => {
               setOutputText(text);
@@ -23,18 +26,18 @@ function TerminalOne({url}) {
     <>
         <div className = "terminalPage">  
 
-          <BottomPanel text={outputText}/>
+        <BottomPanel text={outputText}/>
+
 
           <br/>
           <br/>
-          <Link to= "/world">
-
-          <BottomPanel text="next"/>
-          </Link>
-
+          <br/>
+            <Link to= "/world">
+                <BottomPanel text="go back"/>
+            </Link>
         </div>
     </>
   )
 }
 
-export default TerminalOne
+export default Instructions

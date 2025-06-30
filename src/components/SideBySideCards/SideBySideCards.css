@@ -1,28 +1,67 @@
 .ticket-spread
 {
-    padding-top: 20vh;
+    overflow-y: visible;
+    padding-top: 25vh;
+    padding-left: 11vw;
+    padding-right: 11vw;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    justify-items: center;
+ 
+
+    height: 100%;
+}
+
+.ticket-spread img
+{
+    float: left;
+    width: 40vw;
+}
+
+
+.ticket-showcase
+{
+
+    overflow-y: visible;
+    padding-top: 25vh;
+    padding-left: 11vw;
+    padding-right: 11vw;
+    
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content:center;
     
     justify-items: center;
+
+    height: 100%;
+
 }
 
-.ticket-spread img
+.ticket-showcase img
 {
     float: left;
-    width: 50vw;
+    width: 70vw;
 }
 
-@media (max-width: 800px) {
+@media (orientation: portrait) {
   .ticket-spread {
     flex-direction: column;
+    padding-right: 2vw;
+  }
+
+  .ticket-showcase img
+  {
+    rotate: 90deg;
+    width: 140vw;
   }
   .ticket-spread img
 {
     float: left;
-    width: 100%;
+    width: 70vw;
+    padding-top: 2vh;
 }
 }
 
