@@ -13,6 +13,8 @@
   -moz-osx-font-smoothing: grayscale;
 
   background-color: #FF006B;
+
+  animation: fade-in 3s;
 }
 
 ::selection {
@@ -60,3 +62,4 @@ h1 {
   font-family: 'Atype';
   src: local('Atype'), url(./fonts/AtypeHollow.otf) format('opentype');
 }
+

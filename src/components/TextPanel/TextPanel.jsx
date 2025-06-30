@@ -44,6 +44,7 @@ const TextPanel = ({panelID, index, max, fn}) =>
 
     console.log("currentID: " + currentID);
     console.log("index: " + index);
+
     return (
     <>
         <div>
