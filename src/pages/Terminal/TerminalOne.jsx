@@ -24,7 +24,7 @@ function TerminalOne({url}) {
         <div className = "terminalPage">  
 
           <BottomPanel text={outputText}/>
-
+            
           <br/>
           <br/>
           <Link to= "/world">

@@ -1,4 +1,4 @@
-import "./BottomPanel.css";
+import './BottomPanel.css';
 import { useState, useEffect } from "react";
 
 
@@ -25,18 +25,16 @@ const useTypewriter = (text, speed = 30) => {
 };
 
 
+const InstructionPanel = ({text}) => 
+{
 
-const BottomPanel = ({ text }) => {
-
-   var script = useTypewriter(text, 12);
-
-
-  return (
-    <>
-      <div id="bottom-panel-root">
-        {script}
-      </div>
-    </>
-  );
-};
-export default BottomPanel;
+    var script = useTypewriter(text, 20);
+      return (
+         <>
+         <div id="bottom-panel-roott"> 
+            {script}
+         </div>
+         </>
+      )
+}
+export default InstructionPanel;

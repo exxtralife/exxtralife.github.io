@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import BottomPanel from "../../components/BottomPanel/BottomPanel";
+import InstructionPanel from "../../components/BottomPanel/InstructionPanel";
 import "./Broadcast.css"
 import TerminalInstructions from "./Texts/instructions.txt";
 import { useState, useEffect } from "react";
@@ -24,16 +24,16 @@ function Instructions({url}) {
 
   return (
     <>
-        <div className = "terminalPage">  
+        <div className = "terminalPagei">  
 
-        <BottomPanel text={outputText}/>
+        <InstructionPanel text={outputText}/>
 
 
           <br/>
           <br/>
           <br/>
             <Link to= "/world">
-                <BottomPanel text="go back"/>
+                <InstructionPanel text=" back"/>
             </Link>
         </div>
     </>
