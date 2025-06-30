@@ -2,6 +2,7 @@
 {
     padding-top: 20vh;
     display:flex;
+    flex-direction: row;
     align-items: center;
     justify-content:center;
     
@@ -13,3 +14,16 @@
     float: left;
     width: 50vw;
 }
+
+@media (max-width: 800px) {
+  .ticket-spread {
+    flex-direction: column;
+  }
+  .ticket-spread img
+{
+    float: left;
+    width: 100%;
+}
+}
+
+
