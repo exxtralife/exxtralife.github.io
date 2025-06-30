@@ -33,8 +33,10 @@ function World() {
 
           <SingleTicket url1={loop}/>
           
-          <SingleTicket url1={three}/>
 
+          <a href = "../../../old/Desktop/Desktop.html">
+            <SingleTicket url1={three}/>
+          </a>
           <SingleTicket url1={lite}/>
 
           <Navigation/>
