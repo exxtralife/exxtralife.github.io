@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useId } from 'react';
 import "./TextPanel.css"
-const TextPanel = ({panelID, index, max}) => 
+const TextPanel = ({panelID, index, max, fn}) => 
 {
     var text = "escape will make me";
     var currentID = Number(index);
@@ -17,7 +16,6 @@ const TextPanel = ({panelID, index, max}) =>
     if(currentID != 1)
     {
         var thisTP = document.getElementById(formID);
-        //thisTP.innerHTML = " ";
     }
 
     const deusCheck = (e) => 
@@ -33,31 +31,23 @@ const TextPanel = ({panelID, index, max}) =>
             
             else
             {
-                const textBox = document.getElementById(textPanelID);
-                const form = document.getElementById(formID);
-                form.innerHTML = text + " " + deus;
-                textBox.remove();
-
-                if(currentID < max)
-                {
-                    var nextID = "panel" + (currentID + 1).toString();
-                    console.log(nextID);
-                    var nextBox = document.getElementById(nextID);
-                    nextBox.style.display = "block";
-                    nextBox.scrollIntoView({behavior: "smooth", block: 'center',inline: 'center'});
-                }
-
                 if(currentID == max)
                 {
                     navigate("/TerminalOne");
                 }
+                else
+                {
+                    fn();
+                }
             }
         }
 
+    console.log("currentID: " + currentID);
+    console.log("index: " + index);
     return (
     <>
         <div>
-        <div class = "textPanel" id = {panelID}>
+        <div className = "textPanel" id = {panelID}>
             <form id={formID} onSubmit = {e => deusCheck(e)}>
             {text} <input id={textPanelID} onChange={(e) => setDeus(e.target.value)}  value = {deus} type="text"></input>
             </form>
@@ -68,30 +58,37 @@ const TextPanel = ({panelID, index, max}) =>
 }
 //export default TextPanel
 
-const SentenceChain = ({amount = 4, next}) =>
+const SentenceChain = () =>
 {
-    const [steps, setSteps] = useState([0]);
+    const numbers = ["1","2","3","4","5"];
+    const [panelsSeen, setPanelsSeen] = useState(["1"]);
 
-    const addStep = () => {
-        console.log("correct!");
-        if(steps.length() > amount)
-        {
-            next();
+    const update = () => {
+        const last = panelsSeen[panelsSeen.length - 1];
+        const nextNum = (parseInt(last) + 1).toString();
+        if (numbers.includes(nextNum)) {
+            setPanelsSeen([...panelsSeen, nextNum]);
         }
-
-        setSteps((prev) => [...prev, prev.length]);
-        const id = steps.length;
     }
 
-    const numbers = ["1","2","3","4","5",];
+    // Scroll to the latest panel after it appears
+    useEffect(() => {
+        if (panelsSeen.length > 1) {
+            const lastPanel = panelsSeen[panelsSeen.length - 1];
+            const el = document.getElementById("panel" + lastPanel);
+            if (el) {
+                el.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+            }
+        }
+    }, [panelsSeen]);
+
 
     return (
     <>
-        <div class = "sentenceChain">
+        <div className = "sentenceChain">
 
-           {numbers.map((number) => 
-            (
-                <TextPanel panelID ={"panel" + number} index = {number} max = {5}/>
+           {numbers.filter(number => panelsSeen.includes(number)).map((number) => (
+                <TextPanel panelID ={"panel" + number} index = {number} max = {5} fn={update}/>
             ))}
 
         </div>

@@ -11,7 +11,7 @@ import image2Url from '../assets/posters/anniversary/2.png'
 function EscapeWillMakeMe() {
   return (
     <>
-    <div class = "homepage">      
+    <div className = "homepage">      
       <SentenceChain/>
       <SideBySideCards url1={image1Url}
         url2={image2Url}/>
