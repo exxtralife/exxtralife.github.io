@@ -34,7 +34,7 @@ function World() {
 
         <SingleTicket url1={never}/>
 
-          <a href = "https://exxtralife.github.io/old-site/exxtramail/litepage.html">
+          <a href = "https://s3.us-east-1.amazonaws.com/media.exxtralife.com/exxtraplus/liteloop.mov">
             <SingleTicket url1={loop}/>
           </a>
 
