@@ -1,5 +1,5 @@
 import "./BottomPanel.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useId } from "react";
 
 
 const useTypewriter = (text, speed = 30) => {
@@ -26,14 +26,14 @@ const useTypewriter = (text, speed = 30) => {
 
 
 
-const BottomPanel = ({ text }) => {
+const BottomPanel = ({ text , button}) => {
 
-   var script = useTypewriter(text, 12);
-
-
+  var script = useTypewriter(text, 10);
+  var uid = useId();
+  
   return (
     <>
-      <div id="bottom-panel-root">
+      <div class="bottom-panel-root" id = {uid}>
         {script}
       </div>
     </>

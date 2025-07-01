@@ -25,16 +25,16 @@ const useTypewriter = (text, speed = 30) => {
 };
 
 
-const InstructionPanel = ({text}) => 
+const ButtonPanel = ({text}) => 
 {
 
     var script = useTypewriter(text, 20);
       return (
          <>
-         <div class="bottom-panel-roott"> 
+         <div class="button-panel-root"> 
             {script}
          </div>
          </>
       )
 }
-export default InstructionPanel;
+export default ButtonPanel;

@@ -1,9 +1,10 @@
 
 
-#bottom-panel-root{
+.bottom-panel-root{
     /* margin: auto; */
     /* width: 50%;
     */
+
     padding: 20px; 
     text-align: left;
     font-family: Atype;
@@ -13,3 +14,42 @@
 
     margin-top: 20px;
 }
+
+.button-panel-root{
+    /* margin: auto; */
+    /* width: 50%;
+    */
+
+    padding: 20px; 
+    text-align: left;
+    font-family: Atype;
+    background-color: white;
+    color: #FF006B;
+    font-size: 250%;
+
+    margin-top: 20px;
+}
+
+
+.bottom-panel-roott{
+    /* margin: auto; */
+    /* width: 50%;
+    */
+    width: 100vw;
+    padding: 20px; 
+    text-align: left;
+    font-family: Atype;
+    background-color: #ffffff;
+    color: rgb(255, 0, 0);
+    font-size: 250%;
+
+    margin-top: 20px;
+}
+
+
+.bottom-panel-roott::selection {
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 0, 0, 0.99);
+  opacity: 100%;
+}
+
