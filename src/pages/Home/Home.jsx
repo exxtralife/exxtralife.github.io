@@ -11,7 +11,7 @@ function Home() {
     <>
       <div class = "logo">      
 
-        <Link to= "/escape">
+        <Link to= "/world">
           <img src = {logoUrl} width= "300vw"/>
         </Link>
       </div>
