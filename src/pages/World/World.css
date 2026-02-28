@@ -1,6 +1,6 @@
 .world-page {
 
-  overflow-y: visible; /* Add vertical scrollbar */
+  overflow-y: hidden; /* Add vertical scrollbar */
 
   padding: 20px;
   background-color: white;
@@ -13,7 +13,7 @@
 .displayPane
 {
 
-  overflow-y: visible; /* Add vertical scrollbar */
+  overflow-y: hidden; /* Add vertical scrollbar */
 
   height: 100vh;
   background-color: white;
