@@ -1,20 +1,31 @@
 .world-page {
-
   overflow-y: hidden; /* Add vertical scrollbar */
-
   padding: 20px;
-  background-color: white;
-
+  background-color: #FAFAFB;
   display: flex;
   align-items: center;
-  float: none;
-}
+  min-height: 100dvh;  
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+
+ }
+
+ html, body
+ {
+  overflow-y: hidden;
+  background-color: #FAFAFB;
+ }
 
 .displayPane
 {
-
   overflow-y: hidden; /* Add vertical scrollbar */
+  min-height: 100dvh;  
+  background-color: #FAFAFB;
+  
+}
 
-  height: 100vh;
-  background-color: white;
+a
+{
+    scroll-snap-align: start;
+
 }

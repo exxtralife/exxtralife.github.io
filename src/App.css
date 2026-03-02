@@ -3,7 +3,11 @@
 }
 
 .fade-in {
+  height: 100%;
+  z-index: 0;
   animation: fade-in 0.5s;
+  transition: blur(2px) 0.5s ease;
+
 }
 
 @keyframes fade-in {

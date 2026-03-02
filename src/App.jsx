@@ -1,37 +1,61 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import { BrowserRouter as Router, HashRouter, Route, Routes, useLocation } from 'react-router-dom';
+import { useState } from "react";
 
-import './App.css'
-import EscapeWillMakeMe from './pages/escape';
-import Home from './pages/Home/Home';
-import TerminalOne from './pages/Terminal/TerminalOne';
-import Instructions from './pages/Terminal/Instructions';
-import World from './pages/World/World';
+import {
+  BrowserRouter as Router,
+  HashRouter,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
+
+import "./App.css";
+import EscapeWillMakeMe from "./pages/escape";
+import { ImagePixelated, ElementPixelated } from "react-pixelate";
+import TerminalOne from "./pages/Terminal/TerminalOne";
+import Instructions from "./pages/Terminal/Instructions";
+import World from "./pages/World/World";
+import Cloud from "./pages/Cloud/Cloud";
+import { UniWidget } from "./components/UniWidget/UniWidget";
 
 function AnimatedRoutes() {
   // forces react to remounet the div on every route change so animation is reapplied
   const location = useLocation();
   return (
-    <div className="fade-in" key={location.pathname}>
-      <Routes location={location}>
-        <Route exact path="/" Component={Home}/>
-        <Route exact path="/escape" Component={EscapeWillMakeMe}/>
-        <Route exact path="/terminal" Component={TerminalOne}/>
-        <Route exact path="/instruction" Component={Instructions}/>
+    <>
+      <svg width="0" height="0">
+        <filter id="pixelate"
+          x="-50%"
+          y="-50%"
+          width="200%"
+          height="200%">
+          <feFlood x="4" y="4" height="2" width="2" />
+          <feComposite width="4" height="4" />
+          <feTile />
+          <feComposite in="SourceGraphic" operator="in" />
+        </filter>
+      </svg>
 
-        <Route exact path="/world" Component={World}/>
-      </Routes>
-    </div>
+      <div className="fade-in" key={location.pathname}>
+        <UniWidget />
+        <Routes location={location}>
+          <Route exact path="/" Component={World} />
+          <Route exact path="/world" Component={World} />
+
+          <Route exact path="/escape" Component={EscapeWillMakeMe} />
+          <Route exact path="/terminal" Component={TerminalOne} />
+          <Route exact path="/instruction" Component={Instructions} />
+          <Route exact path="/cloud" Component={Cloud} />
+        </Routes>
+      </div>
+    </>
   );
 }
 
 function App() {
   return (
-      <HashRouter>
-         <AnimatedRoutes/>
-      </HashRouter>
-  )
+    <HashRouter>
+      <AnimatedRoutes />
+    </HashRouter>
+  );
 }
-export default App
+export default App;
