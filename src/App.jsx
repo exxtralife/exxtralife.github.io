@@ -16,6 +16,8 @@ import Instructions from "./pages/Terminal/Instructions";
 import World from "./pages/World/World";
 import Cloud from "./pages/Cloud/Cloud";
 import { UniWidget } from "./components/UniWidget/UniWidget";
+import Sky from "./pages/Cloud/Sky";
+import Wind from "./pages/Cloud/Wind";
 
 function AnimatedRoutes() {
   // forces react to remounet the div on every route change so animation is reapplied
@@ -45,6 +47,10 @@ function AnimatedRoutes() {
           <Route exact path="/terminal" Component={TerminalOne} />
           <Route exact path="/instruction" Component={Instructions} />
           <Route exact path="/cloud" Component={Cloud} />
+          <Route exact path="/sky" Component={Sky} />
+          <Route exact path="/wind" Component={Wind} />
+
+
         </Routes>
       </div>
     </>

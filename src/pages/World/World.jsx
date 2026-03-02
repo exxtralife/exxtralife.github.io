@@ -11,7 +11,7 @@ import looppic from "../../assets/posters/loop/pic.png"
 import three from "../../assets/posters/three/three.png"
 import lite from "../../assets/posters/liteone/ticket.png"
 import litetwo from "../../assets/posters/litetwo/litetwo.png"
-import kei from "../../assets/posters/kei/keicard.png"
+import kei from "../../assets/posters/kei/censored-ticket.png"
 import xxlogo from '../../assets/logos/icon-spread.svg'
 
 import Navigation from '../../components/Navbar/Navbar';
@@ -19,16 +19,57 @@ import SideBySideCards from '../../components/SideBySideCards/SideBySideCards';
 import SingleTicket from '../../components/SideBySideCards/SingleTicket';
 
 import './World.css';
+import DragHandle from "../../components/DragPanel/DragHandle";
+import DragPanel from "../../components/DragPanel/DragPanel";
+import { createElement, useRef, useState } from "react";
+import WebPanel from "../../components/DragPanel/WebPanel";
+import VideoPanel from "../../components/DragPanel/VideoPanel";
 
 
 function World() {
 
+  var portal_text = useRef(null);
+
+  var desktop = useRef(null);
+  var webTicket = useRef(null);
+  var loopVideo = useRef(null);
 
   document.body.style = 'background-color: #FAFAFB;';
+
+
+  let openLoopVideo = (e) => 
+  {
+
+    loopVideo.current.style.display = "block";
+        console.log(e.clientX, e.clientY);
+
+  }
+
+
+  let openLiteTicket = (e) => 
+  {
+ 
+    webTicket.current.style.display = "block";
+        console.log(e.clientX, e.clientY);
+
+  }
+
+
+  let openThreePage = (e) => 
+  {
+
+    desktop.current.style.display = "block";
+        console.log(e.clientX, e.clientY);
+
+  }
 
   return (
     <div className="displayPane">
       <div className="world-page">
+          <DragPanel label="[...!?]" position={{x:window.innerWidth/2, y:window.innerHeight/4}}/>
+          <WebPanel ref={desktop} src = "https://exxtralife.github.io/old-site/Desktop/Desktop.html" position = {{x: window.innerWidth * 5 ,y: window.innerHeight/4}}/>
+          <WebPanel ref={webTicket} src = "https://exxtralife.github.io/old-site/exxtramail/litepage.html" position = {{x: window.innerWidth * 4 ,y: window.innerHeight/4}}/>
+          <VideoPanel ref={loopVideo} src = "https://s3.us-east-1.amazonaws.com/media.exxtralife.com/exxtraplus/liteloop.mov" position = {{x: window.innerWidth * 3 ,y: window.innerHeight/4}}/>
 
           <Link to = "/cloud">
             <SingleTicket url1={kei}/>
@@ -38,27 +79,19 @@ function World() {
         <Link to= "/instruction">
             <SingleTicket url1={image1Url}/>
         </Link>
-        <SingleTicket url1={never}/>
 
-          <Link to = "https://s3.us-east-1.amazonaws.com/media.exxtralife.com/exxtraplus/liteloop.mov">
-            <SingleTicket url1={loop}/>
-          </Link>
 
-           <a href = "https://exxtralife.github.io/old-site/exxtramail/litepage.html">
-            <SingleTicket url1={litetwo}/>
-          </a>
+        <SingleTicket ref={portal_text} url1={never}/>
+
+        <SingleTicket url1={loop} onClick={openLoopVideo}/>
+
+        <SingleTicket url1={litetwo} onClick={openLiteTicket}/>
     
-          <a href = "https://exxtralife.github.io/old-site/Desktop/Desktop.html">
-            <SingleTicket url1={three}/>
-          </a>
+        <SingleTicket url1={three} onClick={openThreePage}/>
 
-           <a href = "https://exxtralife.github.io/old-site/Desktop/Desktop.html">
-            <SingleTicket url1={lite}/>
-          </a>
+        <SingleTicket url1={lite}/>
 
-          <a href = "https://exxtralife.github.io/old-site/Desktop/Desktop.html">
-            <SingleTicket url1={xxlogo}/>
-          </a>
+        <SingleTicket url1={xxlogo}/>
       </div>
 
     </div>

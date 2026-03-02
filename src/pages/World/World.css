@@ -4,15 +4,27 @@
   background-color: #FAFAFB;
   display: flex;
   align-items: center;
-  min-height: 100dvh;  
+  min-height: 90dvh;  
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-
+  user-select: none;
+  -webkit-user-select: none;  /* Safari / iOS */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
  }
 
  html, body
  {
+   margin: 0;
+  padding: 0;
   overflow-y: hidden;
+  height: 100%;
+  position: fixed;
+  overscroll-behavior: none;
+  touch-action: none;
+
+  width: 100%;
   background-color: #FAFAFB;
  }
 
@@ -21,11 +33,10 @@
   overflow-y: hidden; /* Add vertical scrollbar */
   min-height: 100dvh;  
   background-color: #FAFAFB;
-  
 }
 
 a
 {
-    scroll-snap-align: start;
+  overflow-y: hidden; /* Add vertical scrollbar */
 
 }

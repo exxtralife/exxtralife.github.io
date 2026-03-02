@@ -1,10 +1,10 @@
 import './SideBySideCards.css';
 
-const SingleTicket = ({url1}) => 
+const SingleTicket = ({onClick, url1}) => 
 {
     return (
     <>
-      <div className='ticket-showcase'>      
+      <div className='ticket-showcase' onClick={onClick}>      
         <img src={url1}/>
       </div>
     </>

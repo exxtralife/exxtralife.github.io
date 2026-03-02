@@ -1,23 +1,24 @@
+.uni-widget {
+  letter-spacing: -0.06em;
+  color: #656565;
+  font-size: 2.1vw;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1%;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none; /* Safari / iOS */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
-
-
-.uni-widget
-{
-    letter-spacing: -0.06em;
-    color: #656565;
-    font-size: 2.1vw;
-    display: flex;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    width: 100%;    
-    align-items: center;
-    justify-content: center;
-    padding-top: 1%;
-    background-color: #FAFAFB;
-} 
-
-.uni-widget img
-{
-    height: 3vh;
+.uni-widget img {
+  height: 3vh;
 }

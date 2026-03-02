@@ -1,0 +1,76 @@
+
+.panelHeader {
+
+  user-select: none;
+  cursor: move;
+  z-index: 5;
+  background-color: rgb(233, 233, 233);
+  color: #fff;
+  display: flex;
+}
+.dragPanel
+{
+    
+    border-color: rgb(233, 233, 233);
+    position: absolute;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 12px rgb(158, 158, 158);
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 2px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.panelContent
+{
+    color: black;
+    padding: 20px;
+    font-size: 9vw;
+    letter-spacing: -0.1ch;
+}
+
+.panelHeader .closeButton
+{
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+
+.dragPanel .webContent
+{
+    color: black;
+    padding: 1px;
+   
+}
+
+.dragPanel .webContent iframe
+{
+    width: 70vw;
+    height: 40vw;
+    display: block;
+    border-style: none;
+    outline-style: none;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    outline:none;
+    padding: 2px;
+ 
+}  
+
+
+.dragPanel .videoContent
+{
+    color: black;
+    padding: 1px;
+   
+}
+
+.dragPanel .videoContent video
+{
+    height: 30vw;
+    width: 30vw;
+}
