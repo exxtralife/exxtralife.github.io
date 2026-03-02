@@ -15,10 +15,12 @@ export function Sky()
     return(
     <>
         <DragPanel label = "hey you →" position = {random_pos}/>
-        <DragPanel label = "do you see this coat?" position = {random_pos}/>
+        <DragPanel label = "this is a training exercise" position = {random_pos}/>
         <DragPanel label = "exxtralife is a cultural institution" position = {random_pos}/>
         <DragPanel label = "today we gather... " position = {random_pos}/>
-        <DragPanel label = "does it look like we were left off bad and boujee" position = {random_pos}/>
+        <DragPanel label = "here's your formal welcome to spring" position = {random_pos}/>
+        <DragPanel label = "almost" position = {random_pos}/>
+
 
         <div className="cent-image">
 
