@@ -74,3 +74,9 @@
     height: 30vw;
     width: 30vw;
 }
+
+
+.dragPanel .imageContent img
+{
+    height: 30vw;
+}

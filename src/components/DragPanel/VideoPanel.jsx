@@ -51,7 +51,7 @@ const VideoPanel = React.forwardRef((props, ref) => {
             </div>
 
             <div className="videoContent">
-                <video ref= {player} playsInline="true" muted="true" src={props.src}/>
+                <video ref= {player} playsInline="true" loop="true" muted="true" src={props.src}/>
             </div> 
         </div>
     );

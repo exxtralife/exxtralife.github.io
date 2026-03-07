@@ -18,6 +18,7 @@ import Cloud from "./pages/Cloud/Cloud";
 import { UniWidget } from "./components/UniWidget/UniWidget";
 import Sky from "./pages/Cloud/Sky";
 import Wind from "./pages/Cloud/Wind";
+import Flashback from "./pages/Flashback/Flashback";
 
 function AnimatedRoutes() {
   // forces react to remounet the div on every route change so animation is reapplied
@@ -42,7 +43,7 @@ function AnimatedRoutes() {
         <Routes location={location}>
           <Route exact path="/" Component={World} />
           <Route exact path="/world" Component={World} />
-
+          <Route exact path="/flashback" Component={Flashback} />
           <Route exact path="/escape" Component={EscapeWillMakeMe} />
           <Route exact path="/terminal" Component={TerminalOne} />
           <Route exact path="/instruction" Component={Instructions} />

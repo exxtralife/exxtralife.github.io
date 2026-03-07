@@ -76,7 +76,7 @@ function World() {
           </Link>
 
 
-        <Link to= "/instruction">
+        <Link to= "/flashback">
             <SingleTicket url1={image1Url}/>
         </Link>
 

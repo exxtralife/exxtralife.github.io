@@ -1,0 +1,14 @@
+
+
+.cent-image
+{
+    height: 100%;
+    overflow-y: hidden;
+}
+
+
+
+.cent-image img
+{
+    width: 100%;
+}
