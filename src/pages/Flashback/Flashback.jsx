@@ -10,7 +10,7 @@ function Flashback() {
     //alert(String(start_i) + " " + String(end_i))
     let filemanes = [];
     for (var i = start_i; i < end_i; i++) {
-        filemanes.push("/src/assets/oneyear-gallery/g" + String(i) +".png");
+        filemanes.push("../../src/assets/oneyear-gallery/g" + String(i) +".png");
     }
 
     return (
